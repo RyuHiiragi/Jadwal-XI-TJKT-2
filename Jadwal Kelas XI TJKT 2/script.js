@@ -29,50 +29,57 @@ themeToggleBtn.addEventListener('click', toggleTheme);
 // Schedule data (WITA timezone)
 const scheduleData = {
   monday: [
-    { subject: "TJKN", teacher: "Ardian Lionardi", start: "07:55", end: "09:55" },
-    { subject: "ISTIRAHAT 1", teacher: "", start: "09:55", end: "10:25" },
-    { subject: "TJKN", teacher: "Ardian Lionardi", start: "10:25", end: "11:05" },
-    { subject: "Pend. Agama islam dan bp", teacher: "Fahri Ansar Potabuga", start: "11:05", end: "12:25" },
-    { subject: "ISTIRAHAT II DAN SHOLAT DZUHUR", teacher: "", start: "12:25", end: "13:25" },
-    { subject: "Pend. Agama islam dan bp", teacher: "Fahri Ansar Potabuga", start: "13:25", end: "14:05" },
-    { subject: "P2J", teacher: "M. Azar Al Fitrah", start: "14:05", end: "16:10" }
+    { subject: "Bersiap Masuk Sekolah!", teacher: "", start: "...", end: "07:15" },
+    { subject: "Upacara Bendera", teacher: "", start: "07:15", end: "07:55" },
+    { subject: "Pendidikan Agama Islam", teacher: "Aminah Tajudin, S.Pd.I", start: "07:55", end: "09:55" },
+    { subject: "Istirahat", teacher: "", start: "09:55", end: "10:10" },
+    { subject: "Keamanan Jaringan", teacher: "Nugraha Saputra, S.Kom", start: "10:10", end: "12:50" }
   ],
   tuesday: [
-    { subject: "MATA PELAJARAN PILIHAN", teacher: "", start: "07:15", end: "09:55" },
-    { subject: "ISTIRAHAT 1", teacher: "", start: "09:55", end: "10:25" },
-    { subject: "Bahasa Dayak Kenyah", teacher: "Septiana Lenjau", start: "10:25", end: "11:45" },
-    { subject: "Keamanan Jaringan", teacher: "M.Nurfajri", start: "11:45", end: "12:25" },
-    { subject: "ISTIRAHAT II DAN SHOLAT DZUHUR", teacher: "", start: "12:25", end: "13:25" },
-    { subject: "Keamanan Jaringan", teacher: "M.Nurfajri", start: "13:25", end: "15:30" }
+    { subject: "Bersiap Masuk Sekolah!", teacher: "", start: "...", end: "07:00" },
+    { subject: "Pembinaan Karakter", teacher: "", start: "07:00", end: "07:15" },
+    { subject: "B. Indonesia", teacher: "M. Agus Kastiyawan, S.Pd., MPd", start: "07:15", end: "09:15" },
+    { subject: "PKK", teacher: "Hj. Darnilawati, S.Kom., M.Sos", start: "09:15", end: "09:55" },
+    { subject: "Istirahat", teacher: "", start: "09:55", end: "10:10" },
+    { subject: "PKK", teacher: "Hj. Darnilawati, S.Kom., M.Sos", start: "10:10", end: "12:50" }
   ],
   wednesday: [
-    { subject: "Pemasangan KonfigurasiJar", teacher: "M. Azar Al Fitrah", start: "07:15", end: "09:55" },
-    { subject: "ISTIRAHAT 1", teacher: "", start: "09:55", end: "10:25" },
-    { subject: "Administrasi Sistem Jaringan", teacher: "Robiansyah", start: "10:25", end: "12:25" },
-    { subject: "ISTIRAHAT II DAN SHOLAT DZUHUR", teacher: "", start: "12:25", end: "13:25" },
-    { subject: "Bahasa Indonesia", teacher: "Sheyla Adeline", start: "13:35", end: "15:30" }
+    { subject: "Bersiap Masuk Sekolah!", teacher: "", start: "...", end: "07:00" },
+    { subject: "Pembinaan Karakter", teacher: "", start: "07:00", end: "07:15" },
+    { subject: "Mata Pelajaran Pilihan", teacher: "", start: "07:15", end: "09:55" },
+    { subject: "Istirahat", teacher: "", start: "09:55", end: "10:10" },
+    { subject: "ASJ", teacher: "Rama Saputra, S.Kom", start: "10:10", end: "12:50" }
   ],
   thursday: [
-    { subject: "Bahasa Inggris", teacher: "Vicky Priyadi", start: "07:15", end: "08:35" },
-    { subject: "Matematika", teacher: "Penty Farida", start: "08:35", end: "09:55" },
-    { subject: "ISTIRAHAT 1", teacher: "", start: "09:55", end: "10:25" },
-    { subject: "Matematika", teacher: "Penty Farida", start: "10:25", end: "11:05" },
-    { subject: "Projek Kreatif & Kewirausahaan", teacher: "Zulkifli", start: "11:05", end: "12:25" },
-    { subject: "ISTIRAHAT II DAN SHOLAT DZUHUR", teacher: "", start: "12:25", end: "13:25" },
-    { subject: "Projek Kreatif & Kewirausahaan", teacher: "Zulkifli", start: "13:35", end: "15:30" }
+    { subject: "Bersiap Masuk Sekolah!", teacher: "", start: "...", end: "07:00" },
+    { subject: "Pembinaan Karakter", teacher: "", start: "07:00", end: "07:15" },
+    { subject: "PKJ", teacher: "Sigit Triyanto, S.Pd", start: "07:15", end: "09:55" },
+    { subject: "Istirahat", teacher: "", start: "09:55", end: "10:10" },
+    { subject: "P. Tradisional Kaltim", teacher: "Fahri Ansar Potabuga, S.Sos", start: "10:10", end: "11:30" },
+    { subject: "B. Inggris", teacher: "Nuh Lenjau, M.Pd", start: "11:30", end: "12:50" }
   ],
   friday: [
-    { subject: "Bahasa Inggris", teacher: "Vicky Priyadi", start: "07:15", end: "08:35" },
-    { subject: "PJOK", teacher: "Mia Normasari", start: "08:35", end: "09:55" },
-    { subject: "ISTIRAHAT 1", teacher: "", start: "09:55", end: "10:25" },
-    { subject: "Pendidikan Pancasila", teacher: "Juanda", start: "10:25", end: "11:45" },
-    { subject: "WAKTU IBADAH (Sholat Jumat/Ibadah Keagamaan)", teacher: "", start: "11:45", end: "13:25" },
-    { subject: "Sejarah", teacher: "Yekti Bambang Priono", start: "13:25", end: "14:50" }
+    { subject: "Bersiap Masuk Sekolah!", teacher: "", start: "...", end: "07:15" },
+    { subject: "Pendidikan Pancasila", teacher: "Juanda, S.Pd", start: "07:15", end: "08:25" },
+    { subject: "TJKN", teacher: "Abdul Haris, S.Kom", start: "08:25", end: "09:35" },
+    { subject: "Istirahat", teacher: "", start: "09:35", end: "09:50" },
+    { subject: "TJKN", teacher: "Abdul Haris, S.Kom", start: "09:50", end: "11:35" },
+    { subject: "Pendidikan Agama non-Islam", teacher: "", start: "11:35", end: "13:00" }
+  ],
+  saturday: [
+    { subject: "Bersiap Masuk Sekolah!", teacher: "", start: "...", end: "07:15" },
+    { subject: "P2J", teacher: "Sigit Triyanto, S.Pd", start: "07:15", end: "09:45" },
+    { subject: "Istirahat", teacher: "", start: "09:45", end: "10:05" },
+    { subject: "B. Inggris", teacher: "Nuh Lenjau, M.Pd", start: "10:05", end: "11:05" },
+    { subject: "Matematika", teacher: "Misbah, S.Pd", start: "11:05", end: "12:35" }
+  ],
+  sunday: [
+    { subject: "Libur!", teacher: "", start: "00:00", end: "23:59" }
   ]
 };
 
-const days = ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat'];
-const dayKeys = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'];
+const days = ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu', 'Minggu'];
+const dayKeys = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
 
 // DOM elements
 const currentTimeEl = document.getElementById('current-time');
@@ -135,7 +142,10 @@ function timeStringToDate(timeString) {
 // Temukan kelas saat ini dan kelas berikutnya
 function findCurrentAndNextClasses(now) {
   let dayIndex = now.getDay() - 1;
-  if (dayIndex < 0 || dayIndex > 4) {
+  if (dayIndex < 0) {
+    dayIndex = 6; // Sunday
+  }
+  if (dayIndex > 6) {
     return { current: null, next: null };
   }
   
@@ -300,7 +310,8 @@ function initDayButtons() {
   });
   const now = new Date();
   let currentDayIndex = now.getDay() - 1;
-  if (currentDayIndex < 0 || currentDayIndex > 4) currentDayIndex = 0;
+  if (currentDayIndex < 0) currentDayIndex = 6; // Sunday
+  if (currentDayIndex > 6) currentDayIndex = 0;
   dayButtons[currentDayIndex].click();
 }
 
